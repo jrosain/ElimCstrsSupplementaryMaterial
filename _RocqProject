@@ -1,0 +1,6 @@
+-Q theories SupplementaryMaterial
+
+theories/Acc.v
+theories/Prelude.v
+theories/Impredicativity.v
+theories/ProofIrrelevance.v
