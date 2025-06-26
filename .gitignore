@@ -3,6 +3,8 @@
 
 RocqMakefile
 RocqMakefile.conf
+CoqMakefile.conf
+html
 
 ### Coq ###
 .*.aux

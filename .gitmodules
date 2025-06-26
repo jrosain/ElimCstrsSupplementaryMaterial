@@ -1,0 +1,7 @@
+[submodule "rocq"]
+	path = coq
+	url = https://github.com/jrosain/coq/
+	branch = elimination-constraints-prop-sprop
+[submodule "coqdocjs"]
+	path = coqdocjs
+	url = https://github.com/rocq-community/coqdocjs
