@@ -3,14 +3,18 @@
 This repository exposes some supplementary material for my master 2 internship
 report featuring a modified version of Rocq.
 
-## Installation
+## Preview in a web browser
+
+The HTML rendering of this repository can be accessed [here](https://jrosain.github.io/ElimCstrsSupplementaryMaterial/toc.html).
+
+## Local installation
 
 First, you need to follow the [installation instructions of Rocq](https://github.com/rocq-prover/rocq/blob/master/INSTALL.md).
 Afterwards, you should be able to install and compile the files in this repository by using `./configure.sh`.
 
 If you wish to recompile all the files, you can execute `configure.sh` again.
 
-## Browsing the code
+## Local code browsing
 
 The recommended way of browsing the code is through emacs + proof general (the
 following has been tested on commit `491857f`).
