@@ -8,6 +8,8 @@ report featuring a modified version of Rocq.
 First, you need to follow the [installation instructions of Rocq](https://github.com/rocq-prover/rocq/blob/master/INSTALL.md).
 Afterwards, you should be able to install and compile the files in this repository by using `./configure.sh`.
 
+If you wish to recompile all the files, you can execute `configure.sh` again.
+
 ## Browsing the code
 
 The recommended way of browsing the code is through emacs + proof general (the
