@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="coqdoc.css" rel="stylesheet" type="text/css" />
+<title>SupplementaryMaterial.Prelude</title>
+</head>
+
+<body>
+
+<div id="page">
+
+<div id="header">
+</div>
+
+<div id="main">
+
+<h1 class="libtitle">Library SupplementaryMaterial.Prelude</h1>
+
+<div class="code">
+</div>
+
+<div class="doc">
+<a id="lab3"></a><h1 class="section">Prelude: some introductory stuff</h1>
+
+</div>
+<div class="code">
+
+<br/>
+<span class="id" title="keyword">Set</span> <span class="id" title="var">Universe</span> <span class="id" title="var">Polymorphism</span>.<br/>
+
+<br/>
+<span class="id" title="keyword">Inductive</span> <a id="eq" class="idref" href="#eq"><span class="id" title="inductive">eq@</span></a>{<span class="id" title="var">s</span> <span class="id" title="var">s'</span>|<span class="id" title="var">u</span>|} {<a id="A:1" class="idref" href="#A:1"><span class="id" title="binder">A</span></a> : <span class="id" title="var">Type@</span>{<span class="id" title="var">s</span>|<span class="id" title="var">u</span>}} (<a id="x:2" class="idref" href="#x:2"><span class="id" title="binder">x</span></a> : <a class="idref" href="SupplementaryMaterial.Prelude.html#A:1"><span class="id" title="variable">A</span></a>) : <span class="id" title="var">A</span> <a class="idref" href="http://coq.inria.fr/doc/V9.0.0/stdlib//Corelib.Init.Logic.html#::type_scope:x_'-&gt;'_x"><span class="id" title="notation">→</span></a> <span class="id" title="var">Type@</span>{<span class="id" title="var">s'</span>|<span class="id" title="var">u</span>} :=<br/>
+&nbsp;&nbsp;<a id="refl" class="idref" href="#refl"><span class="id" title="constructor">refl</span></a> : <a class="idref" href="SupplementaryMaterial.Prelude.html#eq:3"><span class="id" title="inductive">eq</span></a> <a class="idref" href="SupplementaryMaterial.Prelude.html#x:2"><span class="id" title="variable">x</span></a> <a class="idref" href="SupplementaryMaterial.Prelude.html#x:2"><span class="id" title="variable">x</span></a>.<br/>
+
+<br/>
+<span class="id" title="keyword">Lemma</span> <a id="eq_f" class="idref" href="#eq_f"><span class="id" title="lemma">eq_f@</span></a>{<span class="id" title="var">s</span> <span class="id" title="var">s'</span> <span class="id" title="var">s''</span>|<span class="id" title="var">u</span> <span class="id" title="var">v</span>|+} {<a id="A:5" class="idref" href="#A:5"><span class="id" title="binder">A</span></a> : <span class="id" title="var">Type@</span>{<span class="id" title="var">s</span>|<span class="id" title="var">u</span>}} {<a id="B:6" class="idref" href="#B:6"><span class="id" title="binder">B</span></a> : <span class="id" title="var">Type@</span>{<span class="id" title="var">s'</span>|<span class="id" title="var">v</span>}} (<a id="f:7" class="idref" href="#f:7"><span class="id" title="binder">f</span></a> : <a class="idref" href="SupplementaryMaterial.Prelude.html#A:5"><span class="id" title="variable">A</span></a> <a class="idref" href="http://coq.inria.fr/doc/V9.0.0/stdlib//Corelib.Init.Logic.html#::type_scope:x_'-&gt;'_x"><span class="id" title="notation">→</span></a> <a class="idref" href="SupplementaryMaterial.Prelude.html#B:6"><span class="id" title="variable">B</span></a>) {<a id="x:8" class="idref" href="#x:8"><span class="id" title="binder">x</span></a> <a id="y:9" class="idref" href="#y:9"><span class="id" title="binder">y</span></a> : <a class="idref" href="SupplementaryMaterial.Prelude.html#A:5"><span class="id" title="variable">A</span></a>} :<br/>
+&nbsp;&nbsp;<a class="idref" href="SupplementaryMaterial.Prelude.html#eq"><span class="id" title="inductive">eq@</span></a>{<span class="id" title="var">s</span> <span class="id" title="var">s''</span>|<span class="id" title="var">u</span>} <a class="idref" href="SupplementaryMaterial.Prelude.html#x:8"><span class="id" title="variable">x</span></a> <a class="idref" href="SupplementaryMaterial.Prelude.html#y:9"><span class="id" title="variable">y</span></a> <a class="idref" href="http://coq.inria.fr/doc/V9.0.0/stdlib//Corelib.Init.Logic.html#::type_scope:x_'-&gt;'_x"><span class="id" title="notation">→</span></a> <a class="idref" href="SupplementaryMaterial.Prelude.html#eq"><span class="id" title="inductive">eq@</span></a>{<span class="id" title="var">s'</span> <span class="id" title="var">s''</span>|<span class="id" title="var">v</span>} (<a class="idref" href="SupplementaryMaterial.Prelude.html#f:7"><span class="id" title="variable">f</span></a> <a class="idref" href="SupplementaryMaterial.Prelude.html#x:8"><span class="id" title="variable">x</span></a>) (<a class="idref" href="SupplementaryMaterial.Prelude.html#f:7"><span class="id" title="variable">f</span></a> <a class="idref" href="SupplementaryMaterial.Prelude.html#y:9"><span class="id" title="variable">y</span></a>).<br/>
+<span class="id" title="keyword">Proof</span>. <span class="id" title="tactic">intros</span> []. <span class="id" title="tactic">constructor</span>. <span class="id" title="keyword">Defined</span>.<br/>
+
+<br/>
+</div>
+
+<div class="doc">
+Usual notations / definitions on functions. 
+</div>
+<div class="code">
+<span class="id" title="keyword">Notation</span> <a id="ddfa557d890d9c0cd173d40cb7db80da" class="idref" href="#ddfa557d890d9c0cd173d40cb7db80da"><span class="id" title="notation">&quot;</span></a>f ;; g" := (<span class="id" title="keyword">fun</span> <a id="x:10" class="idref" href="#x:10"><span class="id" title="binder">x</span></a> ⇒ <span class="id" title="var">g</span> (<span class="id" title="var">f</span> <a class="idref" href="SupplementaryMaterial.Prelude.html#x:10"><span class="id" title="variable">x</span></a>)) (<span class="id" title="tactic">at</span> <span class="id" title="keyword">level</span> 40).<br/>
+
+<br/>
+<span class="id" title="keyword">Definition</span> <a id="id" class="idref" href="#id"><span class="id" title="definition">id@</span></a>{<span class="id" title="var">s</span>|<span class="id" title="var">u</span>|} (<a id="A:11" class="idref" href="#A:11"><span class="id" title="binder">A</span></a> : <span class="id" title="var">Type@</span>{<span class="id" title="var">s</span>|<span class="id" title="var">u</span>}) (<a id="x:12" class="idref" href="#x:12"><span class="id" title="binder">x</span></a> : <a class="idref" href="SupplementaryMaterial.Prelude.html#A:11"><span class="id" title="variable">A</span></a>) := <a class="idref" href="SupplementaryMaterial.Prelude.html#x:12"><span class="id" title="variable">x</span></a>.<br/>
+
+<br/>
+<span class="id" title="keyword">Record</span> <a id="Equiv" class="idref" href="#Equiv"><span class="id" title="record">Equiv@</span></a>{<span class="id" title="var">s</span>|<span class="id" title="var">u</span> <span class="id" title="var">v</span>|} (<a id="A:13" class="idref" href="#A:13"><span class="id" title="binder">A</span></a> : <span class="id" title="var">Type@</span>{<span class="id" title="var">s</span>|<span class="id" title="var">u</span>}) (<a id="B:14" class="idref" href="#B:14"><span class="id" title="binder">B</span></a> : <span class="id" title="var">Type@</span>{<span class="id" title="var">s</span>|<span class="id" title="var">v</span>}) := {<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a id="f" class="idref" href="#f"><span class="id" title="projection">f</span></a> : <a class="idref" href="SupplementaryMaterial.Prelude.html#A:13"><span class="id" title="variable">A</span></a> <a class="idref" href="http://coq.inria.fr/doc/V9.0.0/stdlib//Corelib.Init.Logic.html#::type_scope:x_'-&gt;'_x"><span class="id" title="notation">→</span></a> <a class="idref" href="SupplementaryMaterial.Prelude.html#B:14"><span class="id" title="variable">B</span></a>;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a id="g" class="idref" href="#g"><span class="id" title="projection">g</span></a> : <a class="idref" href="SupplementaryMaterial.Prelude.html#B:14"><span class="id" title="variable">B</span></a> <a class="idref" href="http://coq.inria.fr/doc/V9.0.0/stdlib//Corelib.Init.Logic.html#::type_scope:x_'-&gt;'_x"><span class="id" title="notation">→</span></a> <a class="idref" href="SupplementaryMaterial.Prelude.html#A:13"><span class="id" title="variable">A</span></a>;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a id="retr" class="idref" href="#retr"><span class="id" title="projection">retr</span></a> : <span class="id" title="keyword">∀</span> <a id="x:18" class="idref" href="#x:18"><span class="id" title="binder">x</span></a>, <a class="idref" href="SupplementaryMaterial.Prelude.html#eq"><span class="id" title="inductive">eq@</span></a>{<span class="id" title="var">s</span> <span class="id" title="var">s</span>|<span class="id" title="var">u</span>} (<a class="idref" href="SupplementaryMaterial.Prelude.html#ddfa557d890d9c0cd173d40cb7db80da"><span class="id" title="notation">(</span></a><a class="idref" href="SupplementaryMaterial.Prelude.html#f:16"><span class="id" title="method">f</span></a> <a class="idref" href="SupplementaryMaterial.Prelude.html#ddfa557d890d9c0cd173d40cb7db80da"><span class="id" title="notation">;;</span></a> <a class="idref" href="SupplementaryMaterial.Prelude.html#g:17"><span class="id" title="method">g</span></a><a class="idref" href="SupplementaryMaterial.Prelude.html#ddfa557d890d9c0cd173d40cb7db80da"><span class="id" title="notation">)</span></a> <a class="idref" href="SupplementaryMaterial.Prelude.html#ddfa557d890d9c0cd173d40cb7db80da"><span class="id" title="notation">x</span></a>) <a class="idref" href="SupplementaryMaterial.Prelude.html#x:18"><span class="id" title="variable">x</span></a>;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a id="sec" class="idref" href="#sec"><span class="id" title="projection">sec</span></a> : <span class="id" title="keyword">∀</span> <a id="y:20" class="idref" href="#y:20"><span class="id" title="binder">y</span></a>, <a class="idref" href="SupplementaryMaterial.Prelude.html#eq"><span class="id" title="inductive">eq@</span></a>{<span class="id" title="var">s</span> <span class="id" title="var">s</span>|<span class="id" title="var">v</span>} (<a class="idref" href="SupplementaryMaterial.Prelude.html#ddfa557d890d9c0cd173d40cb7db80da"><span class="id" title="notation">(</span></a><a class="idref" href="SupplementaryMaterial.Prelude.html#g:17"><span class="id" title="method">g</span></a> <a class="idref" href="SupplementaryMaterial.Prelude.html#ddfa557d890d9c0cd173d40cb7db80da"><span class="id" title="notation">;;</span></a> <a class="idref" href="SupplementaryMaterial.Prelude.html#f:16"><span class="id" title="method">f</span></a><a class="idref" href="SupplementaryMaterial.Prelude.html#ddfa557d890d9c0cd173d40cb7db80da"><span class="id" title="notation">)</span></a> <a class="idref" href="SupplementaryMaterial.Prelude.html#ddfa557d890d9c0cd173d40cb7db80da"><span class="id" title="notation">y</span></a>) <a class="idref" href="SupplementaryMaterial.Prelude.html#y:20"><span class="id" title="variable">y</span></a>;<br/>
+&nbsp;&nbsp;}.<br/>
+<span class="id" title="keyword">Arguments</span> <a class="idref" href="SupplementaryMaterial.Prelude.html#retr"><span class="id" title="projection">retr</span></a> {<span class="id" title="var">_</span>} {<span class="id" title="var">_</span>} <span class="id" title="var">_</span>.<br/>
+<span class="id" title="keyword">Arguments</span> <a class="idref" href="SupplementaryMaterial.Prelude.html#sec"><span class="id" title="projection">sec</span></a> {<span class="id" title="var">_</span>} {<span class="id" title="var">_</span>} <span class="id" title="var">_</span>.<br/>
+
+<br/>
+<span class="id" title="keyword">Notation</span> <a id="47ab0ac71cf2dac51fa901d3dcced8db" class="idref" href="#47ab0ac71cf2dac51fa901d3dcced8db"><span class="id" title="notation">&quot;</span></a>A ≃ B" := (<a class="idref" href="SupplementaryMaterial.Prelude.html#Equiv"><span class="id" title="record">Equiv</span></a> <span class="id" title="var">A</span> <span class="id" title="var">B</span>) (<span class="id" title="tactic">at</span> <span class="id" title="keyword">level</span> 50).<br/>
+
+<br/>
+</div>
+</div>
+
+<div id="footer">
+<hr/><a href="index.html">Index</a><hr/>This page has been generated by <a href="http://coq.inria.fr/">coqdoc</a>
+</div>
+
+</div>
+
+</body>
+</html>

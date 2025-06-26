@@ -1,7 +1,0 @@
--Q theories SupplementaryMaterial
--Q coq/_build_ci/stdlib/_build/default/theories/ Stdlib
-
-theories/Acc.v
-theories/Prelude.v
-theories/Impredicativity.v
-theories/ProofIrrelevance.v

@@ -1,1 +1,0 @@
-# Elimination Constraints: Supplementary Material
