@@ -3,8 +3,10 @@
 git submodule init
 git submodule update --remote
 
-cd coq && make world && make ci-stdlib
-cd ..
+if [ ! -d coq/_build ]; then
+	cd coq && make world && make ci-stdlib
+	cd ..
+fi
 
 rocq=$(pwd)/coq/_build/install/default/bin/rocq
 $rocq makefile -f _RocqProject -o RocqMakefile -docroot theories
